@@ -25,7 +25,11 @@ namespace wifi
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// ja tu byt
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Process cmd = new Process();
