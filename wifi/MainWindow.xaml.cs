@@ -26,7 +26,7 @@ namespace wifi
             InitializeComponent();
         }
         /// <summary>
-        /// konecne reno
+        /// JC koment
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>

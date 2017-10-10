@@ -1,1 +1,2 @@
 D:\repozitarWifi\wifi\bin\Debug\wifi.exe.config
+C:\Users\Acer\Source\Repos\Custom_Hotspot\wifi\bin\Debug\wifi.exe.config
