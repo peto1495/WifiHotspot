@@ -16,29 +16,20 @@ using System.Diagnostics;
 
 namespace wifi
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
         }
-        /// <summary>
-        /// JC koment
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Process cmd = new Process();
             cmd.StartInfo.FileName = "wifiBat.exe";
-            cmd.StartInfo.Arguments = SSID.Text+" "+PASSWORD.Text;
-            cmd.Start();
-
-
-            
+            cmd.StartInfo.Arguments = ssid_field.Text + " " + password_field.Text;
+            cmd.Start();  
         }
 
         private void vypniWifi(object sender, System.ComponentModel.CancelEventArgs e)
@@ -72,9 +63,9 @@ namespace wifi
             
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void button_shutdown_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("shutdown","/i");
+            Process.Start("shutdown", "/i");
         }
     }
 }

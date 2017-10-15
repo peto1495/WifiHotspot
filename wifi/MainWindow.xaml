@@ -5,15 +5,45 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wifi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525" Closing="vypniWifi">
-    <Grid>
-        <TextBox x:Name="SSID" HorizontalAlignment="Left" Height="30" Margin="39,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="PASSWORD" HorizontalAlignment="Left" Height="30" Margin="39,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label" Content="PASSWORD" HorizontalAlignment="Left" Margin="216,65,0,0" VerticalAlignment="Top" Height="30"/>
-        <Label x:Name="label1" Content="SSID" HorizontalAlignment="Left" Margin="216,26,0,0" VerticalAlignment="Top" Height="30"/>
-        <Button x:Name="button" Content="Vytvor wifi" HorizontalAlignment="Left" Margin="39,114,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <Button x:Name="button1" Content="Vypni" HorizontalAlignment="Left" Margin="158,114,0,0" VerticalAlignment="Top" Width="75" BorderThickness="1" Click="vypniWifi"/>
-        <Button x:Name="button2" Content="Button" HorizontalAlignment="Left" Margin="355,145,0,0" VerticalAlignment="Top" Width="75" Click="button2_Click"/>
+        Title="Wifi Maker by H405" Height="339.758" Width="430.183" Closing="vypniWifi" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Minimized">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FF5F5F5F" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Window.Effect>
+        <DropShadowEffect/>
+    </Window.Effect>
+    <Window.BorderBrush>
+        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FF00C500" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.BorderBrush>
+    <Grid RenderTransformOrigin="0.409,0.506">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF5F5F5F" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="ssid_field" HorizontalAlignment="Left" Height="30" Margin="71,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" BorderBrush="#FF878EA2"/>
+        <Label x:Name="label_heslo" Content="HESLO:" HorizontalAlignment="Left" Margin="10,71,0,0" Width="56" Foreground="White" Height="30" VerticalAlignment="Top"/>
+        <Label x:Name="ssid_label" Content="SSID:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="30" Width="56" Foreground="White"/>
+        <Button x:Name="makeWifi" Content="Vytvoriť WIFI" HorizontalAlignment="Left" Margin="323,30,0,0" Width="85" Click="button_Click" Foreground="White" RenderTransformOrigin="0.5,0.5" BorderThickness="1" ToolTip="" Background="{x:Null}" BorderBrush="White" Height="71" VerticalAlignment="Top"/>
+        <Label Content="Pre vytvorenie bezdrôtovej siete zadate SSID a HESLO:" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" Width="300" Foreground="White"/>
+        <Separator HorizontalAlignment="Left" Height="33" Margin="10,100,0,0" VerticalAlignment="Top" Width="398"/>
+        <Label x:Name="label_akciePC" Content="Akcie pre PC:" HorizontalAlignment="Left" Margin="10,133,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="button_shutdown" Content="Nastaviť vypnutie" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Width="118" Click="button_shutdown_Click" Height="41" Background="{x:Null}" BorderBrush="White" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="168,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="password_field" HorizontalAlignment="Left" Height="30" Margin="71,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" BorderBrush="#FF878EA2"/>
 
     </Grid>
 </Window>
